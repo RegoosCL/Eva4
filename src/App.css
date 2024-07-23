@@ -1,0 +1,494 @@
+/* Resetear márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#contenido {
+
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagen/portada.jpg) center bottom no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.loginn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(imagen/portada.jpg) center bottom no-repeat;
+    background-size: cover;
+}
+
+.login1 {
+    background-color: #d2b48c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.menu-principal h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.menu-principal input[type="email"],
+.menu-principal input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.menu-principal button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8b4513;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-principal button:hover {
+    background-color: #a0522d;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffddf;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: burlywood;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 30px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.main-content {
+    text-align: center;
+    margin: 102px 100px;
+}
+
+.main-content h1 {
+    font-size: 50px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.main-content p {
+    font-size: 16px;
+    color: #c5c5c5c5;
+    padding: 0px 350px;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 900px) {
+    .menu {
+        padding: 30px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #323337;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked~.navbar {
+        display: initial;
+    }
+
+    .main-content p {
+        padding: 0;
+    }
+
+    .quienesomo {
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+
+    .quienesomo-txt {
+        width: 100%;
+        text-align: center;
+    }
+
+    .quienesomo-txt h2 {
+        font-size: 40px;
+    }
+
+    .quienesomo-txt p {
+        font-size: 16px;
+    }
+}
+
+.quienesomo-txt {
+    width: 50%;
+    margin: 100px auto;
+}
+
+.quienesomo-txt h2 {
+    font-size: 60px;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.quienesomo-txt p {
+    font-size: 18px;
+    color: #A7A7A7;
+    margin-bottom: 50px;
+}
+
+.quienesomo button {
+    padding: 5px 15px;
+    background-color: #e0d9b7;
+    border: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.quienesomo button:hover {
+    background-color: #29b64d;
+}
+
+/* CSS para los productos */
+.container-producto {
+    color: #f9fafc;
+}
+
+.container-producto h2 {
+    text-align: center;
+    padding: 20px;
+}
+
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 150px;
+    padding: 60px;
+}
+
+.container-producto img {
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container-producto button {
+    background-color: #e0d9b7;
+    color: #000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container-producto button:hover {
+    background-color: #29b64d;
+}
+
+table {
+    justify-content: center;
+    display: grid;
+}
+
+/* CSS del formulario de contacto */
+#contacto {
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+    color: #fff;
+}
+
+#contacto p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+#contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto form input,
+#contacto form textarea,
+#contacto form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contacto form button {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contacto form button:hover {
+    background-color: rgb(255, 110, 57);
+}
+
+#contacto form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+    color: #ccc;
+}
+
+#contacto form input[type="checkbox"],
+#contacto form input[type="radio"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 10px;
+}
+
+.contan {
+    border-radius: 10px;
+    padding: 100px;
+}
+
+.formcontac {
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.formcontac:hover {
+    background-color: rgb(255, 110, 57);
+}
+
+.redes {
+    float: left;
+}
+
+.abajo {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+    
+}
+
+.redes {
+    margin-bottom: 0.5rem;
+}
+
+.redes a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.redes img {
+    vertical-align: middle;
+}
+
+footer p {
+    margin: 0;
+    text-align: right;
+}
+
+/* Estilos para el formulario de producto */
+#formularioProducto {
+    padding: 20px;
+}
+
+#formularioProducto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formularioProducto input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#formularioProducto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#formularioProducto button:hover {
+    background-color: #45a049;
+}
+
+#editarProductoForm {
+    padding: 20px;
+}
+
+#editarProductoForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#editarProductoForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editarProductoForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editarProductoForm button:hover {
+    background-color: #45a049;
+}
+
+.prods {
+    background-color: #8b694bc5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+#horario {
+    padding: 20px;
+    text-align: center;
+}
+
+#horario .map {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    margin-bottom: 20px;
+}
+
+.horario-info {
+    text-align: center;
+}
+
+.horario-info h2 {
+    color: #fff;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.horario-txt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.horario-txt .txt {
+    flex: 1 1 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.horario-txt .txt h4 {
+    color: #8b4513;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.horario-txt .txt p {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.mapa {
+    padding: 45px;
+}
